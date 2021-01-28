@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="Amardeep Kesarwani" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Love boy Shubham 💙</title>
+</head>
+<body>
+<section class="fixed" >
+ <article class="article" >
+  <h2>&lt;LoveCoding/&gt;</h2>
+   <h1>Loading...</h1><br>
+   <button>Continue</button>
+ </article>
+ <div style="--i:2.3s" ></div>
+ <div style="--i:0.8s"></div>
+ <div style="--i:1.2s"></div>
+ <div style="--i:2.4s"></div>
+ <div style="--i:3.8s"></div>
+ <div style="--i:1.6s" ></div>
+ <div style="--i:2.8s"></div>
+ <div style="--i:2.2s"></div>
+ <div style="--i:1.7s"></div>
+ <div style="--i:2.4s"></div>
+ <div style="--i:3.2s" ></div>
+ <div style="--i:4.5s"></div>
+ <div style="--i:2.3s"></div>
+ <div style="--i:3.8s"></div>
+ <div style="--i:3.2s"></div>
+ <div style="--i:2.3s" ></div>
+ <div style="--i:2.7s"></div>
+ <div style="--i:1.3s"></div>
+ <div style="--i:2.5s"></div>
+ <div style="--i:3.7s"></div>
+ <div style="--i:2.7s"></div>
+ <div style="--i:1.3s"></div>
+ <div style="--i:2.4s"></div>
+ <div style="--i:2.2s"></div>
+</section> 
+
+<section class="sec1" >
+<div class="bird" >
+  <img alt="ak" src="https://64.media.tumblr.com/76656c275a2ecc49cfe82675e954b138/tumblr_mho62cS6Aw1rjeb8co1_500.gif" >
+  <img src="https://i.pinimg.com/originals/7c/29/36/7c2936db7563085ef7470d50fd06e4e3.gif" alt="" style="transform: translateY(-30px)"  >
+</div>
+<div class="snow" >
+  <img src="https://i.pinimg.com/originals/95/58/b9/9558b95660d31cdbfb19167da2a707f4.gif" alt="" >
+</div>
+ <div class="fog1" >
+   <img alt="ak"  src="https://i.pinimg.com/originals/58/fe/d2/58fed2319951ecb538c420da96235042.gif" >
+   <img alt="ak"  src="https://i.pinimg.com/originals/58/fe/d2/58fed2319951ecb538c420da96235042.gif" >
+ </div>
+</section>
+
+<audio src="https://mobcup.net/d/ifxzf42t/mp3" loop id="m"></body>
+<!-- script -->
+<script>
+ const sec1 = document.querySelector(".sec1");
+ const fixed = document.querySelector(".fixed");
+ const art = document.querySelector(".article");
+ const btn = art.querySelector("button");
+ window.addEventListener("load", function(){
+   art.classList.add("load");
+ });
+ setTimeout(() => {
+  art.classList.add("load");
+ },8000)
+ btn.addEventListener("click",() => {
+  fixed.classList.add("hide");
+  document.getElementById("m").play();
+  setTimeout(() => {
+    fixed.style.display = "none";
+  },5200)
+ })
+ sec1.addEventListener("click", (e) =>{
+  let heart = document.createElement("div");
+  heart.classList.add("heart")
+  let x = e.clientX - 25;
+  let y = e.clientY - 25;
+  heart.style.left = x + "px";
+  heart.style.top = y + "px";
+  sec1.append(heart)
+  setTimeout(() => {
+   heart.remove()
+   },3000)
+ })
+ 
+</script>
+</body>
+</html>
